@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.pixabay.com/photo/2021/09/15/11/44/insect-6626635__340.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- https://cdn.pixabay.com/photo/2021/09/15/11/44/insect-6626635__340.jpg -->
+    <title>Stop-Watching</title>
+  </head>
+  <body>
+    <audio controls class="audio" src="./Smash Into Pieces - Six Feet Under (Official Lyric Video).mp3"></audio>
+    <div class="container">
+      <div class="header">
+        <h1>StopWatch</h1>
+      </div>
+
+      <div class="clock">
+        <p>00:00:00</p>
+      </div>
+
+      <div class="btn">
+        <button class="btn1"><i class="fa-solid fa-circle-play"></i></button>
+        <button class="btn2"><i class="fa-solid fa-circle-stop"></i></button>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
+
+  
+<!-- const btn1 = document.querySelector(".btn1");
+const btn2 = document.querySelector(".btn2");
+const btn = document.querySelector(".btn");
+const audio = document.querySelector(".audio");
+const par = document.querySelector("p"); //! saati alacagimiz tag
+
+let min = 0;
+let sec = 0;
+let mSec = 0;
+let run = false; //! basinca caliscagi iivn false deger  verdik.
+
+const watchTimer = () => {
+  mSec++;
+  if ((mSec = 100)) {
+    sec++;
+    mSec = 0;
+    //! msec 100 ounca sec 1 articak msec sonra 0 olacak.
+  }
+
+
+   if (sec == 60) {
+    min++;
+    sec = 0;
+  }
+
+  min = String(min).length < 2 ? "0" + min : min;
+  sec = String(sec).length < 2 ? "0" + sec : sec;
+  mSec = String(mSec).length < 2 ? "0" + mSec : mSec;
+
+  clock.textContent = `${min}:${sec}:${mSec}`;
+};
+
+play.addEventListener("click", () => {
+  run = !run; //! run baslangix eger i false idi  ben bunun dgerini true olarak degistirdim. eger true yazarsam hep calisir ve durduramam.
+  if(run){
+    setInterval(watchTimer,10)
+    play.textContent=``
+  }
+});  -->
